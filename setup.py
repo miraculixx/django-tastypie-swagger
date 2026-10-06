@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-from setuptools import setup
 import tastypie_swagger
+from setuptools import setup
 
 description = "An adapter to use swagger-ui with django-tastypie"
 
@@ -30,7 +30,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'Django>3.2,<5',
+        'Django>=4.2,<=5.2',
         'django-tastypie>=0.14.4',
         'swagger_spec_validator',  # https://github.com/Yelp/swagger_spec_validator
         'typing_extensions',
